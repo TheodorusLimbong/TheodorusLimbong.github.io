@@ -1,0 +1,50 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <title>Calculator Temp </title>
+
+      </head>
+      <body>
+        <header>
+          <nav>
+            <div class="logo">
+              <a href="#">Theodorus Limbong Dummy Project</a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="https://www.linkedin.com/in/theodorus-limbong-6479b8279/" target="_blank">Linkdln</a></li>
+              <li><a href="https://www.instagram.com/theodoruss__/" target="_blank">Instagram</a></li>
+            </ul>
+          </nav>
+        </header>
+
+
+    <div class="container">
+      <h1>Temperature Calculator</h1>
+      <div class="form">
+        <label for="inputCelsius">Celsius:</label>
+        <input type="number" id="inputCelsius" placeholder="celsius in degree" oninput="changeConversionMethod()">
+        <div class="click">
+          <button id="convertButton" onclick="convertToCelsius()">Conversion</button>
+          <button onclick="reset()">Reset</button>
+          <button onclick="reverseConversion()">Reverse</button>
+        </div>
+      </div>
+      <div class="result">
+        <div class="header_result">
+          <label for="outputFahrenheit">Fahrenheit:</label>
+          <span id="outputFahrenheit"></span>
+        </div>
+        <div id="conversionMethod" class="explanation"></div>
+        <div id="conversionExplanation" class="explanation"></div>
+      </div>
+    </div>
+
+        <script src="script.js"></script>
+      </body>
+      </html>
